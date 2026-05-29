@@ -8,7 +8,6 @@
 </head>
 <body>
 
-  <!-- PTICE VAN SVIH KONTEJNERA -->
   <div class="birds-layer" aria-hidden="true">
     <svg class="bird-svg bird-1" viewBox="0 0 40 20">
       <path d="M2 14C8 7 14 6 20 12C26 6 32 7 38 14"></path>
@@ -32,14 +31,41 @@
       <img src="./assets/me.png" alt="Milos portrait" class="avatar-img" />
     </div>
 
-    <p class="hero-text">
-      A website about identity and ideas, still quietly under construction.
-    </p>
+    <div class="about-spacer">
+      <!-- Invisible spacer: keeps same height as index middle content -->
+      <p class="hero-text" aria-hidden="true" style="visibility:hidden">
+        A website about identity and ideas, still quietly under construction.
+      </p>
+      <div style="visibility:hidden" aria-hidden="true">
+        <div class="countdown">
+          <div class="countdown-block">
+            <div class="countdown-number">00</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-colon">:</div>
+          <div class="countdown-block">
+            <div class="countdown-number">00</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-colon">:</div>
+          <div class="countdown-block">
+            <div class="countdown-number">00</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-colon">:</div>
+          <div class="countdown-block">
+            <div class="countdown-number">00</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+      </div>
 
-    <div class="about-passions">
-      <p class="about-passion"><strong>Radio.</strong> The intimacy of a voice in a room — and the craft of building something people actually want to listen to.</p>
-      <p class="about-passion"><strong>Apple.</strong> Design that disappears, hardware that stays out of the way, and a philosophy I've followed since the beginning.</p>
-      <p class="about-passion"><strong>Espresso.</strong> Thirty seconds of precision that turn into something worth slowing down for.</p>
+      <!-- Visible passions overlaid on spacer -->
+      <div class="about-passions">
+        <p class="about-passion"><strong>Radio.</strong> Voice, frequency, and the craft of broadcasting.</p>
+        <p class="about-passion"><strong>Apple.</strong> Design that quietly stays out of the way.</p>
+        <p class="about-passion"><strong>Espresso.</strong> Thirty seconds of precision, perfected.</p>
+      </div>
     </div>
 
     <div class="hero-actions">
