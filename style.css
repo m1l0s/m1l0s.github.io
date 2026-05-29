@@ -288,7 +288,7 @@ body {
 
 .about-passion {
   margin: 0;
-  font-size: clamp(0.88rem, 0.8rem + 0.25vw, 0.98rem);
+  font-size: clamp(1rem, 0.72rem + 0.95vw, 1.35rem);
   line-height: 1.5;
   opacity: 0.9;
 }
