@@ -276,7 +276,10 @@ body {
 
 .about-passions {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 28px;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -352,6 +355,15 @@ body {
   .countdown-label {
     margin-top: 8px;
     font-size: 0.74rem;
+  }
+
+  .about-passions {
+    bottom: 24px;
+    gap: 2px;
+  }
+
+  .about-passion {
+    line-height: 1.3;
   }
 
   .hero-actions,
