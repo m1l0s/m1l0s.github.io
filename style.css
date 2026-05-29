@@ -37,10 +37,7 @@ body {
   width: min(100%, 1060px);
   min-height: 100vh;
   margin: 0 auto;
-  padding-top: calc(clamp(20px, 3vh, 32px) + clamp(150px, 18vw, 250px) + clamp(20px, 3vh, 32px));
-  padding-right: 20px;
-  padding-bottom: 28px;
-  padding-left: 20px;
+  padding: clamp(24px, 4vh, 48px) 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,12 +52,9 @@ body {
 /* AVATAR */
 
 .avatar-wrap {
-  position: fixed;
-  top: clamp(20px, 3vh, 32px);
-  left: 50%;
-  transform: translateX(-50%);
   width: clamp(150px, 18vw, 250px);
-  z-index: 10;
+  margin: 0 auto 32px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,8 +280,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 10px;
-  text-align: left;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -318,15 +313,12 @@ body {
 @media (max-width: 560px) {
   .hero,
   .about-page {
-    padding-top: 200px;
-    padding-right: 14px;
-    padding-bottom: 28px;
-    padding-left: 14px;
+    padding: 24px 14px;
   }
 
   .avatar-wrap {
     width: 150px;
-    top: 25px;
+    margin-bottom: 24px;
   }
 
   .hero-text,
