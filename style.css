@@ -64,7 +64,7 @@ body {
 
 .avatar-wrap {
   position: fixed;
-  top: clamp(150px, 3vh, 32px);
+  top: clamp(20px, 3vh, 32px);
   left: 50%;
   transform: translateX(-50%);
   width: clamp(120px, 16vw, 210px);
@@ -281,6 +281,25 @@ body {
   100% { transform: translateX(calc(100vw + 145px)) translateY(0); }
 }
 
+/* ABOUT PASSIONS */
+
+.about-passions {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.about-passion {
+  margin: 0;
+  font-size: clamp(0.9rem, 0.8rem + 0.3vw, 1rem);
+  line-height: 1.6;
+  opacity: 0.88;
+}
+
 /* MOBILE */
 
 @media (max-width: 820px) {
@@ -301,14 +320,14 @@ body {
 @media (max-width: 560px) {
   .hero,
   .about-page {
-    padding-top: calc(16px + 90px + 24px);
+    padding-top: calc(16px + 130px + 24px);
     padding-right: 14px;
     padding-bottom: 28px;
     padding-left: 14px;
   }
 
   .avatar-wrap {
-    width: 90px;
+    width: 130px;
     top: 16px;
   }
 
